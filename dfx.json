@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "todo_app_backend": {
+      "main": "src/todo_app_backend/main.mo",
+      "type": "motoko"
+    },
+    "todo_app_frontend": {
+      "type": "assets",
+      "source": ["src/todo_app_frontend/public"],
+      "build": "cd src/todo_app_frontend && npm run build"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
